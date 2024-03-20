@@ -17,22 +17,22 @@ const Hero = () => {
       </div>
       <div className="center panel">
         <div className="container">
-          <img src={me} className="me" />
+          <img alt="me as a baby" src={me} className="me" />
           <h1>TREY IS TURNING 25</h1>
         </div>
       </div>
       <div className="right edge panel">
         <h2>THERE WILL BE</h2>
         BEER
-        <img src={beer} width={"100px"} />
+        <img alt="beer gif" src={beer} width={"100px"} />
         PIZZA
-        <img src={pizza} width={"100px"} />
+        <img alt="pizza gif" src={pizza} width={"100px"} />
         SOUL CALIBUR TOUNAMENT
-        <img src={controller} width={"100px"} />
+        <img alt="controller gif" src={controller} width={"100px"} />
         ROWDY
-        <img src={cat} width={"80px"} />
+        <img alt="cat gif" src={cat} width={"80px"} />
         PING PONG
-        <img src={pingpong} width={"80px"} />
+        <img alt="ping-pong gif" src={pingpong} width={"80px"} />
       </div>
     </section>
   );
