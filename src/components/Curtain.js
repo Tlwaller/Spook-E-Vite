@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import "../styles/Curtain.css";
-import ReactAudioPlayer from "react-audio-player";
 import song from "../assets/newLevel.mp3";
 import unopenedMail from "../assets/unopened mail.gif";
 import mail from "../assets/mail.gif";
@@ -10,19 +9,38 @@ const Curtain = () => {
   const [isHidden, setIsHidden] = useState(false);
   const [isHiding, setIsHiding] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioPlayer = useRef(null);
+  const audioElementRef = useRef(null);
+  const audioContextRef = useRef(null);
+  const sourceNodeRef = useRef(null);
+  const resumeTimeRef = useRef(0);
 
   const handleClick = () => {
     setMailOpened(true);
+
+    if (!audioContextRef.current) {
+      audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
+      sourceNodeRef.current = audioContextRef.current.createMediaElementSource(audioElementRef.current);
+      const gainNode = audioContextRef.current.createGain();
+      sourceNodeRef.current.connect(gainNode);
+      gainNode.connect(audioContextRef.current.destination);
+    }
+
+    if (!isPlaying) {
+      resumeTimeRef.current = audioElementRef.current.currentTime;
+      audioElementRef.current.play();
+    }
     setTimeout(() => {
-      setIsPlaying(true);
-      audioPlayer.current.audioEl.current.currentTime = 0;
-      setIsHiding(true);
-      setTimeout(() => {
-        setIsHidden(true);
-      }, 2000);
+      if (!isHiding) {
+        setIsPlaying(true);
+        audioElementRef.current.currentTime = 0;
+        setIsHiding(true);
+        setTimeout(() => {
+          setIsHidden(true);
+        }, 2000);
+      }
     }, 7290);
   };
+
   return (
     <div
       className={`curtain ${isHiding && "hiding"}`}
@@ -38,7 +56,7 @@ const Curtain = () => {
         />
         <span>TAP TO OPEN</span>
       </div>
-      <ReactAudioPlayer ref={audioPlayer} src={song} autoPlay={isPlaying} />
+      <audio ref={audioElementRef} src={song} autoPlay={isPlaying} muted={!isPlaying}/>
     </div>
   );
 };
