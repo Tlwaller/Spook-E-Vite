@@ -18,8 +18,11 @@ const Curtain = () => {
     setMailOpened(true);
 
     if (!audioContextRef.current) {
-      audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
-      sourceNodeRef.current = audioContextRef.current.createMediaElementSource(audioElementRef.current);
+      audioContextRef.current = new (window.AudioContext ||
+        window.webkitAudioContext)();
+      sourceNodeRef.current = audioContextRef.current.createMediaElementSource(
+        audioElementRef.current
+      );
       const gainNode = audioContextRef.current.createGain();
       sourceNodeRef.current.connect(gainNode);
       gainNode.connect(audioContextRef.current.destination);
@@ -56,7 +59,12 @@ const Curtain = () => {
         />
         <span>TAP TO OPEN</span>
       </div>
-      <audio ref={audioElementRef} src={song} autoPlay={isPlaying} muted={!isPlaying}/>
+      <audio
+        ref={audioElementRef}
+        src={song}
+        autoPlay={isPlaying}
+        muted={!isPlaying}
+      />
     </div>
   );
 };

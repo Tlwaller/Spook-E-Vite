@@ -82,7 +82,8 @@ h1 {
   font-weight: 6500;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: yellow;
   font-size: 2.5vw;
 }
@@ -96,11 +97,11 @@ section {
 }
 
 li {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   font-weight: 700;
-   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  position: absolute;
 }
 
 @media (max-width: 576px) {
@@ -108,7 +109,7 @@ li {
     margin-top: 1.5rem;
     transform: perspective(275px) rotateY(45deg);
   }
-  
+
   .right-content {
     white-space: nowrap;
     margin-top: 1.5rem;
@@ -126,8 +127,8 @@ li {
   }
 
   h3 {
-    font-size: .9rem;
-    margin-left: .5rem;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
   }
 
   section {
@@ -136,7 +137,8 @@ li {
 }
 
 @media (min-width: 577px) {
-    h2, h3 {
+  h2,
+  h3 {
     font-size: 2.55vw;
   }
   .left-content {
@@ -153,12 +155,13 @@ li {
     margin-top: 25px;
     transform: perspective(700px) rotateY(50deg);
   }
-  
+
   .right-content {
     transform: perspective(600px) rotateY(-50deg);
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 2.55vw;
   }
 }
@@ -168,7 +171,7 @@ li {
     margin-top: 20px;
     transform: perspective(800px) rotateY(45deg);
   }
-  
+
   .right-content {
     transform: perspective(700px) rotateY(-50deg);
   }
@@ -178,7 +181,8 @@ li {
     font-size: 2.7rem;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     margin-left: 10px;
   }
 }
@@ -191,7 +195,6 @@ li {
     transform: perspective(1000px) rotateY(-35deg);
     height: 60vh;
   }
-
 
   h1 {
     font-size: 3rem;

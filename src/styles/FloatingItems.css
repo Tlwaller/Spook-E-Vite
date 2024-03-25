@@ -1,259 +1,267 @@
 .flex-box {
-    position: relative;
-    display: grid;
-    list-style-type: none;
+  position: relative;
+  display: grid;
+  list-style-type: none;
 }
 
 .flex-box li {
-    position: relative;
+  position: relative;
 }
 
 img {
-    width: auto;
+  width: auto;
 }
 
 .item1 {
-    animation: bounce1 6s infinite linear;
+  animation: bounce1 6s infinite linear;
 }
 
 .item2 {
-    animation: bounce2 6s infinite linear;
+  animation: bounce2 6s infinite linear;
 }
 
 .item3 {
-    animation: bounce3 6s infinite linear;
+  animation: bounce3 6s infinite linear;
 }
 
 .item4 {
-    animation: bounce4 6s infinite linear;
+  animation: bounce4 6s infinite linear;
 }
 
 .item5 {
-    animation: bounce5 6s infinite linear;
+  animation: bounce5 6s infinite linear;
 }
 
 @keyframes bounce1 {
-    0%, 100% {
-        transform: translate(-67%, -28%);
-    }
-    25% {
-        transform: translate(75%, 60%);
-    }
-    50% {
-        transform: translate(32%, -54%);
-    }
-    75% {
-        transform: translate(-98%, -34%);
-    }
+  0%,
+  100% {
+    transform: translate(-67%, -28%);
+  }
+  25% {
+    transform: translate(75%, 60%);
+  }
+  50% {
+    transform: translate(32%, -54%);
+  }
+  75% {
+    transform: translate(-98%, -34%);
+  }
 }
 
 @keyframes bounce2 {
-    0%, 100% {
-        transform: translate(7%, -9%);
-    }
-    25% {
-        transform: translate(-89%, -70%);
-    }
-    50% {
-        transform: translate(-40%, 53%);
-    }
-    75% {
-        transform: translate(68%, -65%);
-    }
+  0%,
+  100% {
+    transform: translate(7%, -9%);
+  }
+  25% {
+    transform: translate(-89%, -70%);
+  }
+  50% {
+    transform: translate(-40%, 53%);
+  }
+  75% {
+    transform: translate(68%, -65%);
+  }
 }
 
 @keyframes bounce3 {
-    0%, 100% {
-        transform: translate(-44%, 4%);
-    }
-    25% {
-        transform: translate(9%, 5%);
-    }
-    50% {
-        transform: translate(-1%, 2%);
-    }
-    75% {
-        transform: translate(8%, -45%);
-    }
+  0%,
+  100% {
+    transform: translate(-44%, 4%);
+  }
+  25% {
+    transform: translate(9%, 5%);
+  }
+  50% {
+    transform: translate(-1%, 2%);
+  }
+  75% {
+    transform: translate(8%, -45%);
+  }
 }
 
 @keyframes bounce4 {
-    0%, 100% {
-        transform: translate(-90%, 2%);
-    }
-    25% {
-        transform: translate(-53%, 46%);
-    }
-    50% {
-        transform: translate(-5%, 36%);
-    }
-    75% {
-        transform: translate(-68%, -71%);
-    }
+  0%,
+  100% {
+    transform: translate(-90%, 2%);
+  }
+  25% {
+    transform: translate(-53%, 46%);
+  }
+  50% {
+    transform: translate(-5%, 36%);
+  }
+  75% {
+    transform: translate(-68%, -71%);
+  }
 }
 
 @keyframes bounce5 {
-    0%, 100% {
-        transform: translate(-32%, -36%);
-    }
-    25% {
-        transform: translate(52%, 4%);
-    }
-    50% {
-        transform: translate(77%, 67%);
-    }
-    75% {
-        transform: translate(2%, 40%);
-    }
+  0%,
+  100% {
+    transform: translate(-32%, -36%);
+  }
+  25% {
+    transform: translate(52%, 4%);
+  }
+  50% {
+    transform: translate(77%, 67%);
+  }
+  75% {
+    transform: translate(2%, 40%);
+  }
 }
 
 @keyframes bounce3mobile {
-    0%, 100% {
-        transform: translate(-44%, 47%);
-    }
-    25% {
-        transform: translate(-32%, 5%);
-    }
-    50% {
-        transform: translate(-50%, 2%);
-    }
-    75% {
-        transform: translate(-80%, -45%);
-    }
+  0%,
+  100% {
+    transform: translate(-44%, 47%);
+  }
+  25% {
+    transform: translate(-32%, 5%);
+  }
+  50% {
+    transform: translate(-50%, 2%);
+  }
+  75% {
+    transform: translate(-80%, -45%);
+  }
 }
 
 @keyframes bounce4mobile {
-    0%, 100% {
-        transform: translate(-90%, 2%);
-    }
-    25% {
-        transform: translate(-53%, 30%);
-    }
-    50% {
-        transform: translate(-5%, 6%);
-    }
-    75% {
-        transform: translate(-68%, -71%);
-    }
+  0%,
+  100% {
+    transform: translate(-90%, 2%);
+  }
+  25% {
+    transform: translate(-53%, 30%);
+  }
+  50% {
+    transform: translate(-5%, 6%);
+  }
+  75% {
+    transform: translate(-68%, -71%);
+  }
 }
 
 @keyframes bounce5mobile {
-    0%, 100% {
-        transform: translate(-32%, -36%);
-    }
-    25% {
-        transform: translate(52%, 4%);
-    }
-    50% {
-        transform: translate(77%, 20%);
-    }
-    75% {
-        transform: translate(2%, 7%);
-    }
+  0%,
+  100% {
+    transform: translate(-32%, -36%);
+  }
+  25% {
+    transform: translate(52%, 4%);
+  }
+  50% {
+    transform: translate(77%, 20%);
+  }
+  75% {
+    transform: translate(2%, 7%);
+  }
 }
 
 @media (max-width: 576px) {
-    .flex-box {
-        grid: auto-flow dense / 10px 50px 1fr;
-    }
+  .flex-box {
+    grid: auto-flow dense / 10px 50px 1fr;
+  }
 
-    .flex-box h2 {
-        font-size: 1rem;
-    }
+  .flex-box h2 {
+    font-size: 1rem;
+  }
 
-    .item3 {
-        animation: bounce3mobile 6s infinite linear;
-    }
+  .item3 {
+    animation: bounce3mobile 6s infinite linear;
+  }
 
-    .item4 {
-        animation: bounce4mobile 6s infinite linear;
-    }
+  .item4 {
+    animation: bounce4mobile 6s infinite linear;
+  }
 
-    .item5 {
-        animation: bounce5mobile 6s infinite linear;
-    }
+  .item5 {
+    animation: bounce5mobile 6s infinite linear;
+  }
 
-    li {
-        font-size: .8rem;
-    }
+  li {
+    font-size: 0.8rem;
+  }
 
-    img {
-        height: 10vw;
-    }
+  img {
+    height: 10vw;
+  }
 }
 
 @media (min-width: 577px) {
-    .flex-box {
-        grid: auto-flow dense / 60px 40px 1fr;
-    }
+  .flex-box {
+    grid: auto-flow dense / 60px 40px 1fr;
+  }
 
-    .item3 {
-        animation: bounce3mobile 6s infinite linear;
-    }
+  .item3 {
+    animation: bounce3mobile 6s infinite linear;
+  }
 
-    .item4 {
-        animation: bounce4mobile 6s infinite linear;
-    }
+  .item4 {
+    animation: bounce4mobile 6s infinite linear;
+  }
 
-    .item5 {
-        animation: bounce5mobile 6s infinite linear;
-    }
+  .item5 {
+    animation: bounce5mobile 6s infinite linear;
+  }
 
-    li {
-        font-size: .7rem;
-    }
+  li {
+    font-size: 0.7rem;
+  }
 
-    img {
-        height: 4.5vw;
-    }
+  img {
+    height: 4.5vw;
+  }
 }
 
 @media (min-width: 768px) {
-    .flex-box {
-        grid: auto-flow dense / 60px 40px 1fr;
-    }
+  .flex-box {
+    grid: auto-flow dense / 60px 40px 1fr;
+  }
 
-    .item3 {
-        animation: bounce3 6s infinite linear;
-    }
+  .item3 {
+    animation: bounce3 6s infinite linear;
+  }
 
-    .item4 {
-        animation: bounce4 6s infinite linear;
-    }
+  .item4 {
+    animation: bounce4 6s infinite linear;
+  }
 
-    li {
-        font-size: .7rem;
-    }
+  li {
+    font-size: 0.7rem;
+  }
 
-    img {
-        height: 4.5vw;
-    }
+  img {
+    height: 4.5vw;
+  }
 }
 
 @media (min-width: 992px) {
-    .flex-box {
-        grid: auto-flow dense / 60px 40px 1fr;
-    }
+  .flex-box {
+    grid: auto-flow dense / 60px 40px 1fr;
+  }
 
-    li {
-        font-size: small;
-    }
+  li {
+    font-size: small;
+  }
 
-    img {
-        height: 4.5vw;
-    }
+  img {
+    height: 4.5vw;
+  }
 }
 
 @media (min-width: 1200px) {
-    .flex-box {
-        grid: auto-flow dense / 60px 80px 1fr;
-    }
+  .flex-box {
+    grid: auto-flow dense / 60px 80px 1fr;
+  }
 
-    .item5 {
-        animation: bounce5 6s infinite linear;
-    }
+  .item5 {
+    animation: bounce5 6s infinite linear;
+  }
 
-    img {
-        height: 4.5vw;
-    }
+  img {
+    height: 4.5vw;
+  }
 }
