@@ -1,10 +1,12 @@
 import React, { useState, useRef } from "react";
 import "../styles/Curtain.css";
-import song from "../assets/newLevel.mp3";
+import song1 from "../assets/RainingBlood.mp3";
+import song2 from "../assets/newLevel.mp3";
 import unopenedMail from "../assets/unopened mail.gif";
 import mail from "../assets/mail.gif";
 
 const Curtain = () => {
+  const [song, setSong] = useState(song1);
   const [mailOpened, setMailOpened] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const [isHiding, setIsHiding] = useState(false);
@@ -16,6 +18,8 @@ const Curtain = () => {
 
   const handleClick = () => {
     setMailOpened(true);
+    setIsPlaying(true);
+    audioElementRef.current.currentTime = 48;
 
     if (!audioContextRef.current) {
       audioContextRef.current = new (window.AudioContext ||
@@ -34,14 +38,16 @@ const Curtain = () => {
     }
     setTimeout(() => {
       if (!isHiding) {
-        setIsPlaying(true);
-        audioElementRef.current.currentTime = 0;
         setIsHiding(true);
         setTimeout(() => {
           setIsHidden(true);
         }, 2000);
       }
     }, 7290);
+  };
+
+  const playNextSong = () => {
+    song === song1 ? setSong(song2) : setSong(song1);
   };
 
   return (
@@ -64,6 +70,7 @@ const Curtain = () => {
         src={song}
         autoPlay={isPlaying}
         muted={!isPlaying}
+        onEnded={playNextSong}
       />
     </div>
   );
