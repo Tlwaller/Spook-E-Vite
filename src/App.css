@@ -7,4 +7,5 @@ body {
   background-color: black;
   background: url(assets/greenmesh.gif);
   background-size: grid;
+  overflow-x: hidden;
 }

@@ -5,7 +5,7 @@ import FloatingItems from "./FloatingItems";
 
 const Hero = () => {
   return (
-    <section>
+    <section className="hero">
       <div className="box--gradient" />
       <div className="left edge panel">
         <div className="left-content">

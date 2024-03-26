@@ -1,4 +1,4 @@
-section {
+.hero {
   position: relative;
   width: 100vw;
   height: 40vw;
@@ -88,7 +88,7 @@ h3 {
   font-size: 2.5vw;
 }
 
-section {
+.hero {
   height: 35vw;
 }
 .flex-box {
@@ -105,6 +105,9 @@ li {
 }
 
 @media (max-width: 576px) {
+  .hero {
+    height: 8cm;
+  }
   .left-content {
     margin-top: 1.5rem;
     transform: perspective(275px) rotateY(45deg);
@@ -129,10 +132,6 @@ li {
   h3 {
     font-size: 0.9rem;
     margin-left: 0.5rem;
-  }
-
-  section {
-    height: 8cm;
   }
 }
 
