@@ -29,8 +29,10 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  background: url(../assets/flames.gif), no-repeat;
+  background: url(../assets/flames.gif);
+  background-repeat: repeat-x;
   background-size: contain;
+  background-position: bottom;
   color: rgb(0, 202, 0);
   box-shadow: inset 0px 0px 20px black;
 }
@@ -74,10 +76,6 @@
   color: yellow;
 }
 
-.me {
-  height: 80%;
-}
-
 h1 {
   font-weight: 6500;
 }
@@ -104,10 +102,49 @@ li {
   position: absolute;
 }
 
+@media (max-width: 425px) {
+  .left-content {
+    margin-top: 1.5rem;
+    transform: perspective(275px) rotateY(45deg);
+  }
+
+  .me {
+    width: 50%;
+    height: auto;
+  }
+
+  .right-content {
+    white-space: nowrap;
+    margin-top: 1.5rem;
+    margin-left: -0.9rem;
+    transform: perspective(100px) rotateY(-30deg);
+  }
+
+  h1 {
+    font-size: 1rem;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  li {
+    font-size: 0.75;
+  }
+}
+
 @media (max-width: 576px) {
   .hero {
     height: 8cm;
   }
+}
+@media (min-width: 425px) {
   .left-content {
     margin-top: 1.5rem;
     transform: perspective(275px) rotateY(45deg);
@@ -118,6 +155,10 @@ li {
     margin-top: 1.5rem;
     margin-left: -1.3rem;
     transform: perspective(150px) rotateY(-30deg);
+  }
+
+  .me {
+    height: 80%;
   }
 
   h1 {
@@ -159,6 +200,11 @@ li {
     transform: perspective(600px) rotateY(-50deg);
   }
 
+  h1 {
+    width: 70%;
+    font-size: 2.7rem;
+  }
+
   h2,
   h3 {
     font-size: 2.55vw;
@@ -173,11 +219,6 @@ li {
 
   .right-content {
     transform: perspective(700px) rotateY(-50deg);
-  }
-
-  h1 {
-    width: 70%;
-    font-size: 2.7rem;
   }
 
   h2,
