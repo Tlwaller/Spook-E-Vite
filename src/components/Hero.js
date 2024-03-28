@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="center panel">
         <div className="center-content">
           <img alt="me as a baby" src={me} className="me" />
-          <h1>TREY IS TURNING 25</h1>
+          <h1 lang="en">TREY IS TURNING 25</h1>
         </div>
       </div>
       <div className="right edge panel">
