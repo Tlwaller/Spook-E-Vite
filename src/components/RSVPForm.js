@@ -17,9 +17,16 @@ const RSVPForm = () => {
       <section className="rsvp-container">
         <form>
           {/* would be cool to autofill this from a name in the url */}
-          <input placeholder="Your name" />
+          <div className="input-group">
+            <input placeholder="Your name" />
+            <input placeholder="Your message" />
+          </div>
           <button className="rsvp-btn">
-            <img src={btn} />
+            <img
+              alt="rsvp button"
+              src={btn}
+              style={{ width: "100%", height: "100%" }}
+            />
           </button>
         </form>
         <div className="guest-list-container">
