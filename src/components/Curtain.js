@@ -1,9 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../styles/Curtain.css";
 import song1 from "../assets/RainingBlood.mp3";
 import song2 from "../assets/newLevel.mp3";
 import unopenedMail from "../assets/unopened mail.gif";
-import mail from "../assets/mail.gif";
+import mail from "../assets/mail.webp";
 
 const Curtain = () => {
   const [song, setSong] = useState(song1);
@@ -15,6 +15,34 @@ const Curtain = () => {
   const audioContextRef = useRef(null);
   const sourceNodeRef = useRef(null);
   const resumeTimeRef = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!isHidden) {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    const disableScroll = () => {
+      if (!isHidden) {
+        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
+        window.addEventListener("scroll", handleScroll);
+      } else {
+        document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    disableScroll();
+
+    return () => {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isHidden]);
 
   const handleClick = () => {
     setMailOpened(true);
@@ -56,7 +84,7 @@ const Curtain = () => {
       onClick={handleClick}
       style={{ display: isHidden ? "none" : "flex" }}
     >
-      <div className="mail-contain">
+      <div className="mail-contain" style={{ display: isHiding ? "none" : "" }}>
         <span>U HAVE MAIL.</span>
         <img
           src={mailOpened ? mail : unopenedMail}

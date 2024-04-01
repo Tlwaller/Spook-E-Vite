@@ -8,25 +8,25 @@ import cat from "../assets/cat.gif";
 
 export default function FloatingItems() {
   return (
-    <ul class="flex-box">
-      <li className="item1">
+    <ul className="flex-box">
+      <li className="floating-item item1">
         <img alt="beer gif" src={beer} width="100px" />
         BEER
       </li>
-      <li className="item2">
+      <li className="floating-item item2">
         <img alt="pizza gif" src={pizza} width="100px" />
         PIZZA
       </li>
-      <li className="item3">
+      <li className="floating-item item3">
         <img alt="controller gif" src={controller} width="100px" />
         SOUL CALIBUR
         <br /> TOURNAMENT
       </li>
-      <li className="item4">
+      <li className="floating-item item4">
         <img alt="cat gif" src={cat} width="80px" />
         ROWDY
       </li>
-      <li className="item5">
+      <li className="floating-item item5">
         <img alt="ping-pong gif" src={pingpong} width="80px" />
         PING PONG
       </li>

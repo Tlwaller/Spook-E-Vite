@@ -4,12 +4,20 @@
   list-style-type: none;
 }
 
-.flex-box li {
+.flex-box .floating-item {
   position: relative;
 }
 
 img {
   width: auto;
+}
+
+.floating-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  position: absolute;
 }
 
 .item1 {
@@ -166,14 +174,14 @@ img {
 }
 
 @media (max-width: 425px) {
-  li {
+  .floating-item {
     font-size: 0.6rem;
     font-weight: 500;
   }
 }
 
 @media (min-width: 425px) {
-  li {
+  .floating-item {
     font-size: 0.75rem;
   }
 }
@@ -221,7 +229,7 @@ img {
     animation: bounce5mobile 6s infinite linear;
   }
 
-  li {
+  .floating-item {
     font-size: 0.7rem;
   }
 
@@ -243,7 +251,7 @@ img {
     animation: bounce4 6s infinite linear;
   }
 
-  li {
+  .floating-item {
     font-size: 0.7rem;
   }
 
@@ -257,7 +265,7 @@ img {
     grid: auto-flow dense / 60px 40px 1fr;
   }
 
-  li {
+  .floating-item {
     font-size: small;
   }
 

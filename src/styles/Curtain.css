@@ -1,5 +1,6 @@
 .curtain {
   position: absolute;
+  perspective: 1000px;
   z-index: 1000;
   height: 100vh;
   width: 100vw;
@@ -9,17 +10,30 @@
   align-items: center;
   flex-direction: column;
   transition: all 2s;
+  overflow: hidden;
 }
 
-.mail1 {
-  width: 300px;
+.mail-contain {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 50px;
 }
 
-.mail2 {
-  width: 400px;
-  height: 300px;
+.mail {
+  width: 50px;
+  height: auto;
 }
 
 .hiding {
-  transform: translateY(100vh);
+  animation: raiseTheCurtain 2s forwards;
+}
+
+@keyframes raiseTheCurtain {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 65% 0%, 35% 0%);
+  }
 }
