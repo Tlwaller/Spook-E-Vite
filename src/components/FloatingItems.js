@@ -5,6 +5,7 @@ import pizza from "../assets/pizza.gif";
 import controller from "../assets/controller.gif";
 import pingpong from "../assets/ping-pong.gif";
 import cat from "../assets/cat.gif";
+import wizard from "../assets/wizard.gif";
 
 export default function FloatingItems() {
   return (
@@ -12,6 +13,8 @@ export default function FloatingItems() {
       <li className="floating-item item1">
         <img alt="beer gif" src={beer} width="100px" />
         BEER
+        <br />
+        (byob)
       </li>
       <li className="floating-item item2">
         <img alt="pizza gif" src={pizza} width="100px" />
@@ -29,6 +32,10 @@ export default function FloatingItems() {
       <li className="floating-item item5">
         <img alt="ping-pong gif" src={pingpong} width="80px" />
         PING PONG
+      </li>
+      <li className="floating-item item6">
+        <img src={wizard} alt="wizard" />
+        WIZARD STAFF
       </li>
     </ul>
   );

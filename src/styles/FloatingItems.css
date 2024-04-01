@@ -18,6 +18,7 @@ img {
   align-items: center;
   font-weight: 700;
   position: absolute;
+  text-align: center;
 }
 
 .item1 {
@@ -43,6 +44,11 @@ img {
 .item5 {
   animation: bounce5 6s infinite linear;
   color: rgb(0, 250, 0);
+}
+
+.item6 {
+  animation: bounce6 6s infinite linear;
+  color: rgb(171, 0, 250);
 }
 
 @keyframes bounce1 {
@@ -122,6 +128,22 @@ img {
   }
   75% {
     transform: translate(2%, 40%);
+  }
+}
+
+@keyframes bounce6 {
+  0%,
+  100% {
+    transform: translate(-80%, 2%);
+  }
+  25% {
+    transform: translate(-40%, 30%);
+  }
+  50% {
+    transform: translate(-5%, 6%);
+  }
+  75% {
+    transform: translate(-60%, -50%);
   }
 }
 

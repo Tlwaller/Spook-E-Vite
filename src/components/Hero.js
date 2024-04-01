@@ -11,14 +11,14 @@ const Hero = () => {
         <div className="left-content">
           <h2>
             I AM QUICKLY APPROACHING THE MIDDLE OF MY LIFE. COME TO MY HOUSE TO
-            CELEBRATE ON 4/27.
+            CELEBRATE.
           </h2>
         </div>
       </div>
       <div className="center panel">
         <div className="center-content">
           <img alt="me as a baby" src={me} className="me" />
-          <h1 lang="en">TREY IS TURNING 25</h1>
+          <h1 lang="en">TREY IS TURNING 25. BE THERE. 4/27 7P.M.</h1>
         </div>
       </div>
       <div className="right edge panel">
