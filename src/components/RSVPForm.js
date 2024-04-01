@@ -17,7 +17,7 @@ const RSVPForm = () => {
       })
       .catch((error) => console.error(error));
   };
-  useEffect(() => getGuests, []);
+  useEffect(() => getGuests(), []);
 
   const handleInput = (event) => {
     setError("");
@@ -30,11 +30,7 @@ const RSVPForm = () => {
     event.preventDefault();
     const regex = /^(?=.*[a-zA-Z]).+$/;
     if (!regex.test(nameInput)) {
-      setError("Really? An RSVP with no name? Do better.");
-    } else if (!regex.test(messageInput)) {
-      setError(
-        "Don't be a buzzkill. Say something quirky or at least something you're bringing."
-      );
+      setError("Look at this mf trying to RSVP without a name lmao");
     } else {
       const data = {
         name: nameInput,
