@@ -8,7 +8,7 @@ import cat from "../assets/cat.gif";
 
 export default function FloatingItems() {
   return (
-    <ul class="flex-box">
+    <ul className="flex-box">
       <li className="floating-item item1">
         <img alt="beer gif" src={beer} width="100px" />
         BEER

@@ -122,6 +122,14 @@ input::placeholder {
   padding: 15px;
 }
 
+.error-txt {
+  color: rgb(182, 0, 0);
+  font-weight: bolder;
+  margin-left: 10px;
+  font-size: 1rem;
+  max-width: 70%;
+}
+
 @media (max-width: 576px) {
   form {
     width: 80%;
@@ -170,5 +178,11 @@ input::placeholder {
   .guest-name,
   .guest-message {
     font-size: small;
+  }
+
+  .error-txt {
+    font-size: small;
+    text-align: center;
+    margin-top: 10px;
   }
 }
