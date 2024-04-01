@@ -10,9 +10,12 @@ const RSVPForm = () => {
   const [error, setError] = useState("");
 
   const getGuests = () => {
-    axios.get("https://tw-25-evite-6176064e0b7f.herokuapp.com/").then((res) => {
-      setGuests(res.data);
-    });
+    axios
+      .get("https://tw-25-evite-6176064e0b7f.herokuapp.com/")
+      .then((res) => {
+        setGuests(res.data);
+      })
+      .catch((error) => console.error(error));
   };
   useEffect(() => getGuests, []);
 
@@ -26,28 +29,28 @@ const RSVPForm = () => {
   const postGuest = (event) => {
     event.preventDefault();
     const regex = /^(?=.*[a-zA-Z]).+$/;
-    try {
-      if (!regex.test(nameInput)) {
-        setError("Really? An RSVP with no name? Do better.");
-      } else if (!regex.test(messageInput)) {
-        setError(
-          "Don't be a buzzkill. Say something quirky or at least something you're bringing."
-        );
-      } else {
-        const data = {
-          name: nameInput,
-          message: messageInput,
-        };
-        axios
-          .post("https://tw-25-evite-6176064e0b7f.herokuapp.com/", data)
-          .then((res) => {
-            setGuests([...guests, res.data]);
-            setNameInput("");
-            setMessageInput("");
-          });
-      }
-    } catch (error) {
-      console.error(error);
+    if (!regex.test(nameInput)) {
+      setError("Really? An RSVP with no name? Do better.");
+    } else if (!regex.test(messageInput)) {
+      setError(
+        "Don't be a buzzkill. Say something quirky or at least something you're bringing."
+      );
+    } else {
+      const data = {
+        name: nameInput,
+        message: messageInput,
+      };
+      axios
+        .post("https://tw-25-evite-6176064e0b7f.herokuapp.com/", data)
+        .then((res) => {
+          setGuests([...guests, res.data]);
+          setNameInput("");
+          setMessageInput("");
+        })
+        .catch((error) => {
+          console.error("Error posting guest:", error);
+          setError("An error occurred while posting the guest");
+        });
     }
   };
 
