@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TW-25-Evite/static/css/main.39b6a4b0.css",
-    "main.js": "/TW-25-Evite/static/js/main.71b9dc21.js",
+    "main.css": "/TW-25-Evite/static/css/main.28238b65.css",
+    "main.js": "/TW-25-Evite/static/js/main.42a94dbd.js",
     "static/js/453.b49b731c.chunk.js": "/TW-25-Evite/static/js/453.b49b731c.chunk.js",
     "static/media/newLevel.mp3": "/TW-25-Evite/static/media/newLevel.b1e7eafa91d95f065a1a.mp3",
     "static/media/RainingBlood.mp3": "/TW-25-Evite/static/media/RainingBlood.98114a2ff6667f26710b.mp3",
@@ -9,6 +9,7 @@
     "static/media/lil-me.png": "/TW-25-Evite/static/media/lil-me.a213530c33aadf5502db.png",
     "static/media/dithered-image.png": "/TW-25-Evite/static/media/dithered-image.a05f9014afe1f2b2ee83.png",
     "static/media/rsvpBtn.gif": "/TW-25-Evite/static/media/rsvpBtn.4e0d49d294ccbfb2e9f5.gif",
+    "static/media/wizard.gif": "/TW-25-Evite/static/media/wizard.d63ad3ce7c819e6355db.gif",
     "static/media/beer.gif": "/TW-25-Evite/static/media/beer.0a39fe5c664197bb853f.gif",
     "static/media/controller.gif": "/TW-25-Evite/static/media/controller.4e1ec0fd65be83a4686d.gif",
     "static/media/pizza.gif": "/TW-25-Evite/static/media/pizza.aa2b8cb0d15c97bc8d56.gif",
@@ -16,12 +17,12 @@
     "static/media/mail.webp": "/TW-25-Evite/static/media/mail.6dfa64f1c5133e588fa0.webp",
     "static/media/ping-pong.gif": "/TW-25-Evite/static/media/ping-pong.3a986c1b07c52b9086d0.gif",
     "index.html": "/TW-25-Evite/index.html",
-    "main.39b6a4b0.css.map": "/TW-25-Evite/static/css/main.39b6a4b0.css.map",
-    "main.71b9dc21.js.map": "/TW-25-Evite/static/js/main.71b9dc21.js.map",
+    "main.28238b65.css.map": "/TW-25-Evite/static/css/main.28238b65.css.map",
+    "main.42a94dbd.js.map": "/TW-25-Evite/static/js/main.42a94dbd.js.map",
     "453.b49b731c.chunk.js.map": "/TW-25-Evite/static/js/453.b49b731c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39b6a4b0.css",
-    "static/js/main.71b9dc21.js"
+    "static/css/main.28238b65.css",
+    "static/js/main.42a94dbd.js"
   ]
 }
