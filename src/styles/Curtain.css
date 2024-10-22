@@ -4,7 +4,7 @@
   z-index: 1000;
   height: 100vh;
   width: 100vw;
-  background-color: #ffffb9;
+  background-color: orange;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -35,5 +35,42 @@
   }
   100% {
     clip-path: polygon(0 0, 100% 0, 65% 0%, 35% 0%);
+  }
+}
+
+.growing-image {
+  position: fixed; /* Use fixed to position relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Translate to truly center */
+  width: 0; /* Start width */
+  height: 0; /* Start height */
+  overflow: hidden; /* Prevent overflow */
+  animation: grow 7s forwards, fadeOut 2s 7s forwards; /* Grow and then fade out */
+}
+
+.growing-image img {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Cover the entire area */
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

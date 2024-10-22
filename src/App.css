@@ -4,8 +4,14 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   height: 100vh;
-  background-color: black;
-  background: url(assets/greenmesh.gif);
+  background: url(assets/spook/eh455hwk3lq71.png);
   background-size: grid;
   overflow-x: hidden;
+}
+
+#App {
+  background: url(assets/spook/bloodbar_e0.gif);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: top;
 }

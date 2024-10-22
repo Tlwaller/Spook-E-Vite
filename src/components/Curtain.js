@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../styles/Curtain.css";
-import song1 from "../assets/RainingBlood.mp3";
-import song2 from "../assets/newLevel.mp3";
+import song1 from "../assets/spooky.mp3";
+import song2 from "../assets/scary.mp3";
 import unopenedMail from "../assets/unopened mail.gif";
 import mail from "../assets/mail.webp";
+import gost from "../assets/spook/ghost-spooky.gif"; // Replace with your image path
 
 const Curtain = () => {
   const [song, setSong] = useState(song1);
@@ -11,6 +12,7 @@ const Curtain = () => {
   const [isHidden, setIsHidden] = useState(false);
   const [isHiding, setIsHiding] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showImage, setShowImage] = useState(false);
   const audioElementRef = useRef(null);
   const audioContextRef = useRef(null);
   const sourceNodeRef = useRef(null);
@@ -64,14 +66,20 @@ const Curtain = () => {
       resumeTimeRef.current = audioElementRef.current.currentTime;
       audioElementRef.current.play();
     }
+
+    // Show the image
+    setShowImage(true);
+
+    // Set a timeout to hide the image after it finishes growing
     setTimeout(() => {
+      setShowImage(false);
       if (!isHiding) {
         setIsHiding(true);
         setTimeout(() => {
           setIsHidden(true);
-        }, 2000);
+        }, 2000); // Wait for 2 seconds before hiding the curtain
       }
-    }, 7290);
+    }, 9000); // Image will disappear after 7 seconds of growth and 2 seconds of fade out
   };
 
   const playNextSong = () => {
@@ -93,6 +101,14 @@ const Curtain = () => {
         />
         <span>TAP TO OPEN</span>
       </div>
+
+      {/* Growing Image */}
+      {showImage && (
+        <div className="growing-image">
+          <img src={gost} alt="Growing" />
+        </div>
+      )}
+
       <audio
         ref={audioElementRef}
         src={song}

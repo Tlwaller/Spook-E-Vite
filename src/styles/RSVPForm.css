@@ -15,8 +15,8 @@
   width: 80%;
   height: 100%;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.712)),
-    url(../assets/dithered-image.png);
-  background-size: cover;
+    url(../assets/spook/Web\ bg.png);
+  background-size: 30%;
   clip-path: polygon(
     35% 0,
     65% 0,
@@ -44,14 +44,28 @@ form {
   width: 50%;
 }
 
-input {
+input,
+select {
   height: 45%;
   width: 100%;
-  background-color: #7c7c7c;
+  background-color: black;
+  box-shadow: red 2px 2px 15px;
+  color: red;
 }
 
 input::placeholder {
-  color: rgb(226, 226, 226);
+  color: red;
+}
+
+option {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+option span {
+  width: 30%;
 }
 
 .rsvp-btn {
@@ -60,6 +74,14 @@ input::placeholder {
   cursor: pointer;
   border-radius: 100%;
   width: 48%;
+}
+
+.bloodbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .guest-list-container {
@@ -71,8 +93,8 @@ input::placeholder {
   align-items: center;
   padding: 4% 0 2%;
   box-shadow: inset 0px 0px 20px black;
-  background: linear-gradient(green, rgba(0, 0, 0, 0.712)),
-    url(../assets/greenmesh.gif);
+  background: linear-gradient(rgba(255, 0, 0, 0.527), rgba(0, 0, 0, 0.712)),
+    url(../assets/spook/bg.batsbg.gif);
   clip-path: polygon(
     35% 5%,
     65% 5%,
@@ -110,13 +132,22 @@ input::placeholder {
   background-color: #0000002c;
 }
 
-.guest-name {
+.guest-name,
+.guest-vote {
   font-size: x-large;
   font-weight: 900;
   padding: 15px;
+  width: 30%;
 }
 
 .guest-message {
+  font-style: italic;
+  text-align: center;
+  padding: 15px;
+  width: 30%;
+}
+
+.guest-vote {
   font-style: italic;
   text-align: right;
   padding: 15px;
@@ -133,23 +164,28 @@ input::placeholder {
 @media (max-width: 576px) {
   form {
     width: 80%;
+    height: fit-content;
     flex-direction: column;
   }
 
   .input-group {
-    width: 80%;
+    width: 100%;
+    z-index: 10;
   }
 
-  input {
+  input,
+  select {
     width: 100%;
     height: 50%;
+    z-index: 10;
   }
 
   .rsvp-btn {
-    height: 50%;
-    margin-top: 5%;
+    margin-top: 25%;
   }
   .rsvp-container {
+    padding-top: 35px;
+    height: 125%;
     clip-path: polygon(
       15% 0,
       85% 0,
