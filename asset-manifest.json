@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/TW-25-Evite/static/css/main.82042933.css",
-    "main.js": "/TW-25-Evite/static/js/main.b833a4ed.js",
-    "static/js/453.b49b731c.chunk.js": "/TW-25-Evite/static/js/453.b49b731c.chunk.js",
-    "static/media/eh455hwk3lq71.png": "/TW-25-Evite/static/media/eh455hwk3lq71.3591d984bee86507f116.png",
-    "static/media/scary.mp3": "/TW-25-Evite/static/media/scary.302aef66b4f7d9e900df.mp3",
-    "static/media/ghost-spooky.gif": "/TW-25-Evite/static/media/ghost-spooky.d04852558aa960064905.gif",
-    "static/media/spooky.mp3": "/TW-25-Evite/static/media/spooky.ad52b84dd117aaa61e01.mp3",
-    "static/media/rsvpBtn.gif": "/TW-25-Evite/static/media/rsvpBtn.4e0d49d294ccbfb2e9f5.gif",
-    "static/media/anihang.gif": "/TW-25-Evite/static/media/anihang.e2b1604ca8c18217e8f6.gif",
-    "static/media/flame.gif": "/TW-25-Evite/static/media/flame.68487676403977aa4837.gif",
-    "static/media/skull.gif": "/TW-25-Evite/static/media/skull.bab7ff647a354e5ca407.gif",
-    "static/media/beer.gif": "/TW-25-Evite/static/media/beer.0a39fe5c664197bb853f.gif",
-    "static/media/controller.gif": "/TW-25-Evite/static/media/controller.4e1ec0fd65be83a4686d.gif",
-    "static/media/pizza.gif": "/TW-25-Evite/static/media/pizza.aa2b8cb0d15c97bc8d56.gif",
-    "static/media/mail.webp": "/TW-25-Evite/static/media/mail.6dfa64f1c5133e588fa0.webp",
-    "static/media/ping-pong.gif": "/TW-25-Evite/static/media/ping-pong.3a986c1b07c52b9086d0.gif",
-    "index.html": "/TW-25-Evite/index.html",
-    "main.82042933.css.map": "/TW-25-Evite/static/css/main.82042933.css.map",
-    "main.b833a4ed.js.map": "/TW-25-Evite/static/js/main.b833a4ed.js.map",
-    "453.b49b731c.chunk.js.map": "/TW-25-Evite/static/js/453.b49b731c.chunk.js.map"
+    "main.css": "/Spook-E-Vite/static/css/main.43b05da6.css",
+    "main.js": "/Spook-E-Vite/static/js/main.7739cc47.js",
+    "static/js/453.cf50f41e.chunk.js": "/Spook-E-Vite/static/js/453.cf50f41e.chunk.js",
+    "static/media/eh455hwk3lq71.png": "/Spook-E-Vite/static/media/eh455hwk3lq71.3591d984bee86507f116.png",
+    "static/media/scary.mp3": "/Spook-E-Vite/static/media/scary.302aef66b4f7d9e900df.mp3",
+    "static/media/ghost-spooky.gif": "/Spook-E-Vite/static/media/ghost-spooky.d04852558aa960064905.gif",
+    "static/media/spooky.mp3": "/Spook-E-Vite/static/media/spooky.ad52b84dd117aaa61e01.mp3",
+    "static/media/rsvpBtn.gif": "/Spook-E-Vite/static/media/rsvpBtn.4e0d49d294ccbfb2e9f5.gif",
+    "static/media/anihang.gif": "/Spook-E-Vite/static/media/anihang.e2b1604ca8c18217e8f6.gif",
+    "static/media/flame.gif": "/Spook-E-Vite/static/media/flame.68487676403977aa4837.gif",
+    "static/media/skull.gif": "/Spook-E-Vite/static/media/skull.bab7ff647a354e5ca407.gif",
+    "static/media/beer.gif": "/Spook-E-Vite/static/media/beer.0a39fe5c664197bb853f.gif",
+    "static/media/controller.gif": "/Spook-E-Vite/static/media/controller.4e1ec0fd65be83a4686d.gif",
+    "static/media/pizza.gif": "/Spook-E-Vite/static/media/pizza.aa2b8cb0d15c97bc8d56.gif",
+    "static/media/mail.webp": "/Spook-E-Vite/static/media/mail.6dfa64f1c5133e588fa0.webp",
+    "static/media/ping-pong.gif": "/Spook-E-Vite/static/media/ping-pong.3a986c1b07c52b9086d0.gif",
+    "index.html": "/Spook-E-Vite/index.html",
+    "main.43b05da6.css.map": "/Spook-E-Vite/static/css/main.43b05da6.css.map",
+    "main.7739cc47.js.map": "/Spook-E-Vite/static/js/main.7739cc47.js.map",
+    "453.cf50f41e.chunk.js.map": "/Spook-E-Vite/static/js/453.cf50f41e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82042933.css",
-    "static/js/main.b833a4ed.js"
+    "static/css/main.43b05da6.css",
+    "static/js/main.7739cc47.js"
   ]
 }
